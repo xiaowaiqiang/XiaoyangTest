@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.XiaoyangTest.FullscreenContainer"
+    tools:context=".ui.place.PlaceFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light_blue_600"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/fl_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_blue_600">
+        <EditText
+            android:id="@+id/et_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入搜索内容"
+            android:background="@drawable/et_bg"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_et"/>
+</RelativeLayout>
